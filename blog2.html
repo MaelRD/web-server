@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+   <section>
+    <h1>Notas sobre CSS</h1>
+    <p>Aquí encontrarás algunas notas y ejemplos sobre CSS para mejorar el diseño de tu página web.</p>
+    </section>
+
+    <section>
+        <h2>1. Reset y configuración global</h2>
+        <p>Es común resetear los estilos predeterminados del navegador para evitar inconsistencias:</p>
+        <pre><code>* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}</code></pre>
+        <div class="note">
+            <strong>Nota:</strong> <code>box-sizing: border-box</code> asegura que el padding y el borde estén incluidos en el ancho y alto de los elementos.
+        </div>
+    </section>
+
+    <section>
+        <h2>2. Animación de fondo</h2>
+        <p>Puedes crear animaciones de fondo con gradientes y keyframes:</p>
+        <pre><code>body {
+    background: linear-gradient(90deg, rgba(92,7,1,1) 0%, rgba(153,36,79,1) 33%, rgba(226,36,0,1) 53%);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}</code></pre>
+        <div class="note">
+            <strong>Nota:</strong> Usa <code>@keyframes</code> para definir animaciones y <code>animation</code> para aplicarlas.
+        </div>
+    </section>
+
+    <section>
+        <h2>3. Header fijo con desenfoque</h2>
+        <p>Un header fijo con efecto de desenfoque puede mejorar la estética de tu página:</p>
+        <pre><code>header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(5px);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}</code></pre>
+        <div class="note">
+            <strong>Nota:</strong> <code>backdrop-filter: blur(5px)</code> aplica un efecto de desenfoque al fondo del header.
+        </div>
+    </section>
+
+    <section>
+        <h2>4. Menús horizontales y verticales</h2>
+        <p>Puedes crear menús desplegables con CSS:</p>
+        <pre><code>.menu-horizontal {
+    display: flex;
+    list-style: none;
+}
+
+.menu-horizontal li:hover .menu-vertical {
+    display: block;
+}
+
+.menu-vertical {
+    display: none;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(5px);
+}</code></pre>
+        <div class="note">
+            <strong>Nota:</strong> Usa <code>position: absolute</code> para posicionar el menú vertical debajo del ítem del menú horizontal.
+        </div>
+    </section>
+
+    <section>
+        <h2>5. Secciones con sombras y bordes redondeados</h2>
+        <p>Puedes mejorar el diseño de las secciones con sombras y bordes redondeados:</p>
+        <pre><code>section {
+    background-color: rgba(17, 17, 17, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}</code></pre>
+        <div class="note">
+            <strong>Nota:</strong> <code>box-shadow</code> agrega sombras, y <code>border-radius</code> redondea los bordes.
+        </div>
+    </section>
+
+    <section>
+        <h2>6. Diseño responsive</h2>
+        <p>Usa media queries para adaptar tu diseño a diferentes dispositivos:</p>
+        <pre><code>@media (max-width: 768px) {
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    h1 {
+        font-size: 2rem;
+    }
+}</code></pre>
+        <div class="note">
+            <strong>Nota:</strong> Las media queries permiten ajustar estilos según el ancho de la pantalla.
+        </div>
+    </section>
+
+    <footer>
+        <p>Mario Yael Gordillo García</p>
+        <p>
+            Sígueme en 
+            <a href="https://github.com/MaelRD" aria-label="GitHub">GitHub</a>
+        </p>
+        <p>&copy; 2025 - Todos los derechos reservados</p>
+    </footer>
+
+
+
+</body>
+</html>

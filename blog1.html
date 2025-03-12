@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>HTML</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <section>
+    <h1>Notas sobre HTML</h1>
+    <p>Aquí encontrarás algunas notas básicas sobre HTML para ayudarte a crear páginas web.</p>
+</section>
+    <section>
+        <h2>1. Estructura básica de un documento HTML</h2>
+        <p>Todo documento HTML debe tener una estructura básica:</p>
+        <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="es"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Título de la página&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;!-- Contenido de la página --&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+        <div class="note">
+            <strong>Nota:</strong> El <code>&lt;!DOCTYPE html&gt;</code> define que el documento es HTML5.
+        </div>
+    </section>
+
+    <section>
+        <h2>2. Etiquetas comunes</h2>
+        <p>Algunas de las etiquetas más utilizadas en HTML son:</p>
+        <h3>Encabezados</h3>
+        <p>Los encabezados se definen con las etiquetas <code>&lt;h1&gt;</code> a <code>&lt;h6&gt;</code>:</p>
+        <pre><code>&lt;h1&gt;Título principal&lt;/h1&gt;
+&lt;h2&gt;Subtítulo&lt;/h2&gt;</code></pre>
+
+        <h3>Párrafos</h3>
+        <p>Los párrafos se crean con la etiqueta <code>&lt;p&gt;</code>:</p>
+        <pre><code>&lt;p&gt;Este es un párrafo de texto.&lt;/p&gt;</code></pre>
+
+        <h3>Enlaces</h3>
+        <p>Los enlaces se crean con la etiqueta <code>&lt;a&gt;</code>:</p>
+        <pre><code>&lt;a href="https://www.ejemplo.com"&gt;Enlace a Ejemplo&lt;/a&gt;</code></pre>
+    </section>
+
+    <section>
+        <h2>3. Listas</h2>
+        <p>Puedes crear listas ordenadas y no ordenadas:</p>
+        <h3>Lista no ordenada</h3>
+        <pre><code>&lt;ul&gt;
+    &lt;li&gt;Elemento 1&lt;/li&gt;
+    &lt;li&gt;Elemento 2&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+
+        <h3>Lista ordenada</h3>
+        <pre><code>&lt;ol&gt;
+    &lt;li&gt;Primer elemento&lt;/li&gt;
+    &lt;li&gt;Segundo elemento&lt;/li&gt;
+&lt;/ol&gt;</code></pre>
+    </section>
+
+    <section>
+        <h2>4. Imágenes</h2>
+        <p>Para insertar imágenes, usa la etiqueta <code>&lt;img&gt;</code>:</p>
+        <pre><code>&lt;img src="ruta/de/la/imagen.jpg" alt="Descripción de la imagen"&gt;</code></pre>
+        <div class="note">
+            <strong>Nota:</strong> El atributo <code>alt</code> es importante para la accesibilidad y el SEO.
+        </div>
+    </section>
+
+    <section>
+        <h2>5. Formularios</h2>
+        <p>Los formularios se crean con la etiqueta <code>&lt;form&gt;</code>:</p>
+        <pre><code>&lt;form action="/submit" method="post"&gt;
+    &lt;label for="nombre"&gt;Nombre:&lt;/label&gt;
+    &lt;input type="text" id="nombre" name="nombre"&gt;
+    &lt;input type="submit" value="Enviar"&gt;
+&lt;/form&gt;</code></pre>
+    </section>
+
+    <footer>
+        <p>Mario Yael Gordillo García</p>
+        <p>
+            Sígueme en 
+            <a href="https://github.com/MaelRD" aria-label="GitHub">GitHub</a>
+        </p>
+        <p>&copy; 2025 - Todos los derechos reservados</p>
+    </footer>
+
+    
+</body>
+</html>

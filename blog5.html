@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Recursos</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <body>
+
+
+    <section>
+        <h1>Notas sobre Diseño Web</h1>
+        <p>Aquí encontrarás notas resumidas sobre diseño web, incluyendo layouts con HTML, CSS y Grid.</p>
+    </section>
+    
+        <section>
+            <h2>1. Diseño de Layouts con HTML</h2>
+            <p>En HTML, los layouts se pueden estructurar utilizando elementos semánticos como <code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code>, <code>&lt;section&gt;</code>, <code>&lt;article&gt;</code>, <code>&lt;footer&gt;</code>, etc.</p>
+            <pre><code>&lt;header&gt;Cabecera&lt;/header&gt;
+    &lt;nav&gt;Menú de navegación&lt;/nav&gt;
+    &lt;section&gt;
+        &lt;article&gt;Contenido principal&lt;/article&gt;
+        &lt;aside&gt;Barra lateral&lt;/aside&gt;
+    &lt;/section&gt;
+    &lt;footer&gt;Pie de página&lt;/footer&gt;</code></pre>
+            <div class="note">
+                <strong>Nota:</strong> Usar elementos semánticos mejora la accesibilidad y el SEO.
+            </div>
+            <p>Referencia: <a href="https://www.w3schools.com/html/html_layout.asp" target="_blank">W3Schools - HTML Layout</a></p>
+        </section>
+    
+        <section>
+            <h2>2. Diseño de Layouts con CSS</h2>
+            <p>CSS permite crear layouts responsivos y personalizados. Algunas técnicas comunes incluyen:</p>
+            <ul>
+                <li><strong>Float</strong>: Para posicionar elementos a la izquierda o derecha.</li>
+                <li><strong>Flexbox</strong>: Para crear diseños flexibles y alineados.</li>
+                <li><strong>Grid</strong>: Para crear layouts complejos con filas y columnas.</li>
+            </ul>
+            <pre><code>.container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 10px;
+    }</code></pre>
+            <div class="note">
+                <strong>Nota:</strong> Flexbox es ideal para diseños unidimensionales, mientras que Grid es mejor para diseños bidimensionales.
+            </div>
+            <p>Referencia: <a href="https://www.w3schools.com/css/css_website_layout.asp" target="_blank">W3Schools - CSS Website Layout</a></p>
+        </section>
+    
+        <section>
+            <h2>3. CSS Grid</h2>
+            <p>CSS Grid es una poderosa herramienta para crear layouts complejos. Algunos conceptos clave incluyen:</p>
+            <ul>
+                <li><strong>Grid Container</strong>: El contenedor que define el grid.</li>
+                <li><strong>Grid Items</strong>: Los elementos dentro del grid.</li>
+                <li><strong>Grid Lines</strong>: Las líneas que dividen el grid.</li>
+                <li><strong>Grid Tracks</strong>: Las filas y columnas del grid.</li>
+            </ul>
+            <pre><code>.grid-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto;
+        gap: 15px;
+    }</code></pre>
+            <div class="note">
+                <strong>Nota:</strong> CSS Grid es compatible con la mayoría de los navegadores modernos.
+            </div>
+            <p>Referencia: <a href="https://www.w3schools.com/css/css_grid.asp" target="_blank">W3Schools - CSS Grid</a></p>
+        </section>
+    
+        <footer>
+            <p>Mario Yael Gordillo García</p>
+            <p>
+                Sígueme en 
+                <a href="https://github.com/MaelRD" aria-label="GitHub">GitHub</a>
+            </p>
+            <p>&copy; 2025 - Todos los derechos reservados</p>
+        </footer>
+
+    
+</body>
+</html>
